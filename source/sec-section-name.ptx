@@ -3,6 +3,68 @@
 <section xml:id="sec-section-name" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Section Title</title>
 
-  <p> Text of section. </p>
+  <p> The exercise copied directly from: https://pretextbook.org/examples/sample-book/annotated/fill-in-exercises.html </p>
+
+  <exercise label="fillin-case-insensitive">
+    <title>Fill-In, Case-Insensitive Answer</title>
+    <statement>
+      <p>
+        The word <var /> is the opposite of
+        <q>yes</q>. (Try a mixture of upper and lower-case letters.)
+      </p>
+    </statement>
+    <setup>
+      <var case="insensitive">
+  
+      <condition string="no">
+      <feedback>
+        The correct answers are  no, No, nO, and NO.
+      </feedback>
+      </condition>
+      <condition string=".*">
+      <feedback>
+        Incorrect.
+      </feedback>
+      </condition>
+      </var>
+    </setup>
+  </exercise>
+  
+
+<!--
+  <exercise 
+  xml:id="ch-cc_sec-ga_ex-github-account-url"
+  label="ch-cc_sec-ga_ex-github-account-url"
+  >
+  <title />
+  <statement>
+    <p>
+      Give the full URL to your GitHub profile, for example <c>https://github.com/yourUsername</c>.
+    </p>
+    <p>
+      <var width="45" />
+    </p>
+  </statement>
+  
+  <setup>
+    <var>
+      <condition string="^https://github.com/.*">
+        <feedback>
+          <p>
+            Thank you.
+          </p>
+        </feedback>
+      </condition>
+      <condition string=".*">
+        <feedback>
+          <p>
+            Please give the full URL using the format indicated in the question.
+          </p>
+        </feedback>
+      </condition>
+    </var>
+  </setup>
+</exercise>
+-->
 
 </section>
